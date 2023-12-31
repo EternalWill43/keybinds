@@ -1,0 +1,17 @@
+<base>
+[pgup]>[prnt]
+[obrk]>[up]
+[hk4]>[cbrk]
+[up]>[cbrk]
+[end]>[lalt]
+[hk1]>[t]
+[hk2]>[lalt]
+[rght]>[obrk]
+
+<keypad>
+
+<function1>
+
+<function2>
+
+<function3>
