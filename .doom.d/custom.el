@@ -4,8 +4,9 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(magit-todos-insert-after '(bottom) nil nil "Changed by setter of obsolete option `magit-todos-insert-at'")
- '(org-agenda-files '("~/scrap/notes.org" "c:/Users/emils/org/notes.org"))
- '(package-selected-packages '(##)))
+ '(org-agenda-files
+   '("~/org-roam/test.org" "c:/Users/iown/Documents/Plans/notes.org"))
+ '(package-selected-packages '(clang-format org-roam lsp-mode)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

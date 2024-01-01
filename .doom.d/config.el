@@ -1,18 +1,21 @@
 ;;; $DOOMDIR/config.el -*- lexical-binding: t; -*-
 
+(map! :i "C-s" #'save-buffer
+      :n "C-s" #'save-buffer)
+(map! :n "]e" #'flycheck-next-error)
+(map! :n "[e" #'flycheck-previous-error)
+
+(load! "mycpp.el") ;;; Custom bind that runs clang-format-buffer before saving.
+(setq doom-font (font-spec :size 17))
+(setq epg-gpg-program "C:/Program Files (x86)/GnuPG/bin/gpg.exe")
 ;; Place your private configuration here! Remember, you do not need to run 'doom
 ;; sync' after modifying this file!
-(add-to-list 'auto-mode-alist '("\\.tsx\\'" . typescript-mode))
+
 
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets. It is optional.
-(setq user-full-name "John Doe"
-      user-mail-address "john@doe.com")
-(map! :i "C-s" #'save-buffer
-      :n "C-s" #'save-buffer)
-
-(setq doom-font (font-spec :family "Mononoki Nerd Font" :size 20))
-
+;; (setq user-full-name "John Doe"
+;;       user-mail-address "john@doe.com")
 
 ;; Doom exposes five (optional) variables for controlling fonts in Doom:
 ;;
@@ -20,7 +23,7 @@
 ;; - `doom-variable-pitch-font' -- a non-monospace font (where applicable)
 ;; - `doom-big-font' -- used for `doom-big-font-mode'; use this for
 ;;   presentations or streaming.
-;; - `doom-unicode-font' -- for unicode glyphs
+;; - `doom-symbol-font' -- for symbols
 ;; - `doom-serif-font' -- for the `fixed-pitch-serif' face
 ;;
 ;; See 'C-h v doom-font' for documentation and more examples of what they
@@ -61,7 +64,7 @@
 ;;     package is loaded (see 'C-h v VARIABLE' to look up their documentation).
 ;;   - Setting doom variables (which start with 'doom-' or '+').
 ;;
-;; Here are some itional functions/macros that will help you configure Doom.
+;; Here are some additional functions/macros that will help you configure Doom.
 ;;
 ;; - `load!' for loading external *.el files relative to this one
 ;; - `use-package!' for configuring packages
@@ -79,4 +82,3 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
-
