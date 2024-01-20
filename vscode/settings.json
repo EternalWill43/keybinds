@@ -1,0 +1,44 @@
+{
+    "editor.inlineSuggest.enabled": true,
+    "svelte.enable-ts-plugin": true,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": true,
+        "scminput": false,
+        "cpp": false
+    },
+    "codeium.enableConfig": {
+        "*": false
+    },
+    "glassit.alpha": 255,
+    "workbench.colorTheme": "Keen (rainglow)",
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "vim.foldfix": true,
+    "git.autofetch": true,
+    "editor.formatOnSave": true,
+    "remote.SSH.remotePlatform": {
+        "74.208.110.40": "linux"
+    },
+    "todohighlight.keywords": [
+        "REVIEW",
+        {
+            "text": "NOTE:",
+            "color": "#ff0000",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "overviewRulerColor": "grey"
+        },
+        {
+            "text": "TODO:",
+            "color": "#00ff00",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "overviewRulerColor": "grey"
+        },
+    ],
+    "todo-tree.highlights.enabled": false,
+}
